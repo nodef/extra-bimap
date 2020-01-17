@@ -1,5 +1,5 @@
 A bi-directional map, with unique keys to unique values. Internally,
-its a map and its mirror map which allows value to be looked up through
+its a map and its inverse map which allows value to be looked up through
 key, **and key through value**.<br>
 Eg. `email id <-> person name`.
 
@@ -19,22 +19,22 @@ m.set(2, 'b');
 m.set(2, 'a');
 // Error: BiMap pair is not unique
 
-m.mirror;
+m.inverse;
 // BiMap [Map] { 'a' => 1, 'b' => 2 }
 
-m.mirror.set('a', 2);
+m.inverse.set('a', 2);
 // Error: BiMap pair is not unique
 
-m.mirror.set('b', 3);
+m.inverse.set('b', 3);
 // BiMap [Map] { 'a' => 1, 'b' => 3 }
 
-m.mirror.mirror
+m.inverse.inverse
 // BiMap [Map] { 1 => 'a', 3 => 'b' }
 
 m.delete(1);
 // BiMap [Map] { 3 => 'b' }
 
-m.mirror.has('a')
+m.inverse.has('a')
 // false
 ```
 <br>
@@ -45,7 +45,7 @@ Methods:
 | Name                | Action
 |---------------------|-------
 | [BiMap]             | Creates a bi-directional map, with unique keys to unique values.
-| [mirror]            | Gives reversed bi-directional map.
+| [inverse]           | Gives reversed bi-directional map.
 | [clear]             | Removes all elements from map.
 | [delete]            | Removes the specified element from map.
 | [set]               | Adds or updates an element with a specified key and a value to map.
@@ -63,6 +63,7 @@ Methods:
 
 ## references
 
+- [BiMap by Guillaume Plique](https://yomguithereal.github.io/mnemonist/bi-map)
 - [bimap by James Daab](https://www.npmjs.com/package/bimap)
 - [Bidirectional Map by Joni Salonen, mawia
 ](https://stackoverflow.com/a/9783084/1413259)
@@ -80,7 +81,7 @@ Methods:
 [![nodef](https://merferry.glitch.me/card/extra-bimap.svg)](https://nodef.github.io)
 
 [BiMap]: https://github.com/nodef/extra-bimap/wiki/BiMap
-[mirror]: https://github.com/nodef/extra-bimap/wiki/mirror
+[inverse]: https://github.com/nodef/extra-bimap/wiki/inverse
 [clear]: https://github.com/nodef/extra-bimap/wiki/clear
 [delete]: https://github.com/nodef/extra-bimap/wiki/delete
 [set]: https://github.com/nodef/extra-bimap/wiki/set

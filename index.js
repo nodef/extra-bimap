@@ -2,18 +2,18 @@ class BiMap extends Map {
   /**
    * Creates a bi-directional map, with unique keys to unique values.
    * @param {Map?} iter predefined entries (iterable)
-   * @param {nop?} mirr please leave this empty
+   * @param {nop?} inv please leave this empty
    */
-  constructor(iter, mirr=null) {
+  constructor(iter, inv=null) {
     super(iter||[]);
-    mirr = mirr||new BiMap(flipEntries(iter||[]), this);
-    Object.defineProperty(this, 'mirror', {get: () => mirr});
+    inv = inv||new BiMap(flipEntries(iter||[]), this);
+    Object.defineProperty(this, 'inverse', {get: () => inv});
   }
 
   /**
    * Gives reversed bi-directional map.
    */
-  get mirror() {
+  get inverse() {
     return null;
   }
 
@@ -22,7 +22,7 @@ class BiMap extends Map {
    */
   clear() {
     super.clear();
-    this.mirror.clear();
+    this.inverse.clear();
   }
 
   /**
@@ -34,7 +34,7 @@ class BiMap extends Map {
     var val = super.get(key);
     if(val===undefined) return false;
     super.delete(key);
-    this.mirror.delete(val);
+    this.inverse.delete(val);
     return true;
   }
 
@@ -47,10 +47,10 @@ class BiMap extends Map {
   set(key, val) {
     var valOld = super.get(key);
     if(val===valOld) return this;
-    if(this.mirror.has(val) && this.mirror.get(val)!==key) throw new Error('BiMap pair is not unique');
-    if(valOld!==undefined) this.mirror.delete(valOld);
+    if(this.inverse.has(val) && this.inverse.get(val)!==key) throw new Error('BiMap pair is not unique');
+    if(valOld!==undefined) this.inverse.delete(valOld);
     super.set(key, val);
-    this.mirror.set(val, key);
+    this.inverse.set(val, key);
     return this;
   }
 }
