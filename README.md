@@ -49,14 +49,14 @@ Methods:
 | [clear]             | Removes all elements from map.
 | [delete]            | Removes the specified element from map.
 | [set]               | Adds or updates an element with a specified key and a value to map.
-| **size**            | Same as Map.
-| **entries**         | Same as Map.
-| **forEach**         | Same as Map.
-| **get**             | Same as Map.
-| **has**             | Same as Map.
-| **keys**            | Same as Map.
-| **values**          | Same as Map.
-| **@@iterator**      | Same as Map.
+| *size*              | Same as Map.
+| *entries*           | Same as Map.
+| *forEach*           | Same as Map.
+| *get*               | Same as Map.
+| *has*               | Same as Map.
+| *keys*              | Same as Map.
+| *values*            | Same as Map.
+| *@@iterator*        | Same as Map.
 
 <br>
 <br>
