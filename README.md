@@ -74,6 +74,11 @@ Methods:
 - [Bidirectional map](https://en.wikipedia.org/wiki/Bidirectional_map)
 - [Map by MDN contributors](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
 
+<br>
+<br>
+
+[![nodef](https://merferry.glitch.me/card/extra-bimap.svg)](https://nodef.github.io)
+
 [BiMap]: https://github.com/nodef/extra-bimap/wiki/BiMap
 [mirror]: https://github.com/nodef/extra-bimap/wiki/mirror
 [clear]: https://github.com/nodef/extra-bimap/wiki/clear
