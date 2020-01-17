@@ -1,0 +1,31 @@
+{
+  "name": "extra-bimap",
+  "version": "0.0.1",
+  "description": "A bi-directional map, with unique keys to unique values.",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodef/extra-bimap.git"
+  },
+  "keywords": [
+    "merferry",
+    "extra",
+    "bimap",
+    "bi",
+    "directional",
+    "map",
+    "unique",
+    "key",
+    "value",
+    "pair"
+  ],
+  "author": "wolfram77@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nodef/extra-bimap/issues"
+  },
+  "homepage": "https://github.com/nodef/extra-bimap#readme"
+}
