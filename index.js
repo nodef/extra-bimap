@@ -11,7 +11,7 @@ class BiMap extends Map {
   }
 
   /**
-   * Gives mirrored bi-directional map.
+   * Gives reversed bi-directional map.
    */
   get mirror() {
     return null;
