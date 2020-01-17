@@ -1,6 +1,7 @@
 A bi-directional map, with unique keys to unique values. Internally,
 its a map and its mirror map which allows value to be looked up through
-key, **and key through value**. Eg. `email id <-> person name`.
+key, **and key through value**.<br>
+Eg. `email id <-> person name`.
 
 ```javascript
 const BiMap = require('extra-bimap');
