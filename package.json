@@ -1,6 +1,6 @@
 {
   "name": "extra-bimap",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A bi-directional map, with unique keys to unique values.",
   "main": "index.js",
   "scripts": {

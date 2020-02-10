@@ -1,4 +1,4 @@
-A bi-directional map, with unique keys to unique values. Internally,
+A [bi-directional map], with unique keys to unique values. Internally,
 its a map and its inverse map which allows value to be looked up through
 key, **and key through value**.<br>
 Eg. `email id <-> person name`.
@@ -66,3 +66,4 @@ m.inverse.has('a')
 [clear]: https://github.com/nodef/extra-bimap/wiki/clear
 [delete]: https://github.com/nodef/extra-bimap/wiki/delete
 [set]: https://github.com/nodef/extra-bimap/wiki/set
+[bi-directional map]: https://en.wikipedia.org/wiki/Bidirectional_map
