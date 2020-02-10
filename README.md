@@ -37,10 +37,8 @@ m.delete(1);
 m.inverse.has('a')
 // false
 ```
-<br>
-<br>
 
-Methods:
+### reference
 
 | Name                | Action
 |---------------------|-------
@@ -61,26 +59,9 @@ Methods:
 <br>
 <br>
 
-## references
-
-- [BiMap by Guillaume Plique](https://yomguithereal.github.io/mnemonist/bi-map)
-- [bimap by James Daab](https://www.npmjs.com/package/bimap)
-- [Bidirectional Map by Joni Salonen, mawia
-](https://stackoverflow.com/a/9783084/1413259)
-- [Bi-directional Map in Java? by Willie Scholtz, Danijel](https://stackoverflow.com/a/10699528/1413259)
-- [Chapter 13. Boost.Bimap by Boris Schäling](https://theboostcpplibraries.com/boost.bimap)
-- [Chapter 1. Boost.Bimap by Matias Capeletto](https://www.boost.org/doc/libs/1_68_0/libs/bimap/doc/html/index.html)
-- [Guava's Bidirectional Maps by Dustin Marx](https://dzone.com/articles/guavas-bidirectional-maps)
-- [Interface BiMap<K,V>](https://guava.dev/releases/19.0/api/docs/com/google/common/collect/BiMap.html)
-- [Bidirectional map](https://en.wikipedia.org/wiki/Bidirectional_map)
-- [Map by MDN contributors](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
-
-<br>
-<br>
-
 [![nodef](https://merferry.glitch.me/card/extra-bimap.svg)](https://nodef.github.io)
 
-[BiMap]: https://github.com/nodef/extra-bimap/wiki/BiMap
+[BiMap]: https://github.com/nodef/extra-bimap/wiki
 [inverse]: https://github.com/nodef/extra-bimap/wiki/inverse
 [clear]: https://github.com/nodef/extra-bimap/wiki/clear
 [delete]: https://github.com/nodef/extra-bimap/wiki/delete
