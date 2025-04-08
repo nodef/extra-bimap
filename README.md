@@ -60,6 +60,7 @@ m.inverse.has('a')
 <br>
 
 [![nodef](https://merferry.glitch.me/card/extra-bimap.svg)](https://nodef.github.io)
+![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/extra-bimap)
 
 [BiMap]: https://github.com/nodef/extra-bimap/wiki
 [inverse]: https://github.com/nodef/extra-bimap/wiki/inverse
